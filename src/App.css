@@ -1,0 +1,64 @@
+/* App.css */
+.App {
+  text-align: left; /* Align text to the left */
+  background-color: #f9f9f9; /* Light gray background for the entire app */
+  min-height: 100vh; /* Ensure the app takes up the full height of the viewport */
+  padding: 0; /* Remove padding to fit full height */
+  margin: 0; /* Remove margin to fill the screen */
+  width: 100vw; /* Set width to 100% of the viewport width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+/* Header Styles */
+.app-header {
+  font-size: 2em; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the font bold */
+  margin: 20px; /* Add some margin for spacing */
+  padding-left: 20px; /* Add padding to the left for better spacing */
+  color: #333; /* Set text color */
+}
+
+.controls {
+  margin: 20px; /* Add margin for spacing */
+  font-size: 1.2em; /* Increase the font size of the controls */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically centered */
+  gap: 20px; /* Add some space between controls */
+}
+
+.controls label {
+  margin-right: 10px; /* Space between label and dropdown */
+  font-weight: bold; /* Make label bold */
+}  
+
+.controls select {
+  padding: 10px; /* Increase padding for dropdowns */
+  font-size: 1em; /* Set a larger font size for dropdown text */
+  border: 1px solid #ccc; /* Light border for dropdowns */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* New styles for the Kanban board container */
+.kanban-board-container {
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner padding */
+  width: 100%; /* Make the container fill the width */
+  height: calc(100vh - 60px); /* Make the container fill the height minus controls */
+  margin: 0; /* Remove margin to fill the screen */
+}
+
+/* Kanban Board Styles */
+.kanban-board {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to ensure columns stay in a single row */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  padding: 20px; /* Inner padding */
+  background-color: #f0f0f0; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  margin: 0; /* Ensure no margin */
+  height: 100%; /* Fill the height of the container */
+  width: 100%; /* Fill the width of the container */
+}

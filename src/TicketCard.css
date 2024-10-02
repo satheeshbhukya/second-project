@@ -1,0 +1,60 @@
+/* TicketCard.css */
+
+.ticket-card {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0; /* Margin between cards */
+  transition: box-shadow 0.3s; /* Transition for hover effect */
+  min-height: 100px; /* Set a minimum height for ticket cards */
+}
+
+.ticket-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.ticket-title {
+  font-size: 1.2em; /* Slightly larger title */
+  color: #2c3e50; /* Darker color for title */
+  margin-bottom: 5px;
+}
+
+.ticket-meta {
+  display: flex;
+  justify-content: space-between; /* Space between meta info */
+  font-size: 0.9em; /* Smaller font size for meta */
+  color: #7f8c8d; /* Gray color for meta */
+}
+
+.priority-label {
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Priority styles */
+.priority-4 {
+  background-color: #e74c3c; /* Urgent */
+  color: white;
+}
+
+.priority-3 {
+  background-color: #f39c12; /* High */
+  color: white;
+}
+
+.priority-2 {
+  background-color: #f1c40f; /* Medium */
+  color: black;
+}
+
+.priority-1 {
+  background-color: #2ecc71; /* Low */
+  color: white;
+}
+
+.priority-0 {
+  background-color: #bdc3c7; /* No priority */
+  color: black;
+}
